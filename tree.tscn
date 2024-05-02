@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://c03j7l4tgwjtm"]
+
+[ext_resource type="Texture2D" uid="uid://ba6q7yfmb1lbn" path="res://Textures/tree.png" id="1_dm123"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_2us2m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ux4y6"]
+radius = 260.768
+
+[node name="Tree" type="StaticBody2D"]
+scale = Vector2(0.05, 0.05)
+physics_material_override = SubResource("PhysicsMaterial_2us2m")
+
+[node name="Tree" type="Sprite2D" parent="."]
+position = Vector2(7.62939e-06, 3.8147e-06)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_dm123")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ux4y6")
