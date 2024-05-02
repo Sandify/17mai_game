@@ -1,13 +1,23 @@
 @tool
 extends Node2D
 
+# FOOD
+const ITEM_APPLE = preload("res://Textures/icons/Pixel Art Icon Pack - RPG/Food/Apple.png")
 
-const ITEM_WOOD = preload("res://Textures/wood_icon.webp")
-const ITEM_FOOD = preload("res://Textures/food_icon.png")
+# MATERIAL
+const ITEM_WOOD = preload("res://Textures/icons/Pixel Art Icon Pack - RPG/Material/Wood Log.png")
+#const ITEM_ = preload()
+#const ITEM_ = preload()
+#const ITEM_ = preload()
+
+# TOOL
+const ITEM_PICKAXE = preload("res://Textures/icons/Pixel Art Icon Pack - RPG/Weapon & Tool/Pickaxe.png")
+const ITEM_TORCH = preload("res://Textures/icons/Pixel Art Icon Pack - RPG/Weapon & Tool/Torch.png")
+const ITEM_WOOD_SWORD = preload("res://Textures/icons/Pixel Art Icon Pack - RPG/Weapon & Tool/Wooden Sword.png")
 
 
 const ITEM_TEXTURES = [
-	ITEM_WOOD,ITEM_FOOD
+	ITEM_APPLE,ITEM_WOOD,ITEM_PICKAXE,ITEM_TORCH,ITEM_WOOD_SWORD
 ]
 
 

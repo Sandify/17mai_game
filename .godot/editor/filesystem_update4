@@ -1,9 +1,6 @@
-res://world.tscn
-res://player.tscn
-res://world_01.tscn
-res://player.gd
-res://tree.tscn
-res://Item.gd
-res://item.tscn
 res://inventory_node.tscn
 res://InventoryNode.gd
+res://world.tscn
+res://player.tscn
+res://item.tscn
+res://Item.gd
