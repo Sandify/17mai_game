@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://bu56864amfcnm"]
+[gd_scene load_steps=8 format=3 uid="uid://bu56864amfcnm"]
 
 [ext_resource type="PackedScene" uid="uid://brl0hwvshprh0" path="res://player.tscn" id="1_hu0ow"]
+[ext_resource type="Script" path="res://world.gd" id="1_ohhsu"]
 [ext_resource type="Texture2D" uid="uid://cg80g20c0dd86" path="res://Tilemaps/punyworld-overworld-tileset.png" id="2_w8ex4"]
 [ext_resource type="PackedScene" uid="uid://c03j7l4tgwjtm" path="res://tree.tscn" id="3_t7d0j"]
+[ext_resource type="PackedScene" uid="uid://ddd165ebj3lrm" path="res://inventory_node.tscn" id="4_5ib4m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_60wfu"]
 texture = ExtResource("2_w8ex4")
@@ -2100,6 +2102,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_60wfu")
 
 [node name="World" type="Node2D"]
+script = ExtResource("1_ohhsu")
 
 [node name="Player" parent="." instance=ExtResource("1_hu0ow")]
 top_level = true
@@ -2112,3 +2115,14 @@ layer_0/tile_data = PackedInt32Array(-65538, 65536, 2, -2, 65536, 0, 65534, 6553
 [node name="Tree" parent="." instance=ExtResource("3_t7d0j")]
 top_level = true
 position = Vector2(-61, 3)
+
+[node name="inventory" type="Window" parent="."]
+initial_position = 1
+size = Vector2i(195, 265)
+visible = false
+unresizable = true
+borderless = true
+always_on_top = true
+unfocusable = true
+
+[node name="InventoryNode" parent="inventory" instance=ExtResource("4_5ib4m")]
