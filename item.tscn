@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bl7jvk73j56vr"]
+
+[ext_resource type="Script" path="res://Item.gd" id="1_un03a"]
+[ext_resource type="Texture2D" uid="uid://b15o0t324kqix" path="res://Textures/wood_icon.webp" id="2_cop1t"]
+
+[node name="Item" type="Node2D"]
+texture_filter = 1
+scale = Vector2(2, 2)
+script = ExtResource("1_un03a")
+item_id = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_cop1t")
