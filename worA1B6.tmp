@@ -2129,6 +2129,7 @@ unfocusable = true
 [node name="InventoryNode" parent="inventory" instance=ExtResource("4_5ib4m")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Inventory" type="Panel" parent="CanvasLayer"]
 anchors_preset = 15

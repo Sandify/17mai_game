@@ -2,7 +2,6 @@ res://inventory_node.tscn
 res://InventoryNode.gd
 res://world.tscn
 res://player.tscn
+res://tree.tscn
 res://item.tscn
-res://Item.gd
 res://world.gd
-res://inventory.gd

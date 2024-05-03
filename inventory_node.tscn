@@ -7,3 +7,6 @@
 script = ExtResource("1_t13im")
 
 [node name="Item" parent="." instance=ExtResource("2_fdonh")]
+
+[node name="Item2" parent="." instance=ExtResource("2_fdonh")]
+item_id = 3

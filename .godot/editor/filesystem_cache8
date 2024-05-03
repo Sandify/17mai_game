@@ -1,135 +1,134 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714684722
-icon.svg::CompressedTexture2D::1175276720659491497::1714318080::1714683203::1::::<><>::
-InventoryNode.gd::GDScript::-1::1714684648::0::1::::<>Node2D<>::
-inventory_node.tscn::PackedScene::7377657298616857738::1714684649::0::1::::<><>::res://InventoryNode.gd<>uid://bl7jvk73j56vr::::res://item.tscn
-Item.gd::GDScript::-1::1714683939::0::1::::<>Node2D<>::
-item.tscn::PackedScene::3225142582400948439::1714684648::0::1::::<><>::res://Item.gd<>uid://b15o0t324kqix::::res://Textures/icons/wood_icon.webp
-player.gd::GDScript::-1::1714683166::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::3603870794993202355::1714684648::0::1::::<><>::res://player.gd<>uid://2fbom28sv5b8::::res://Textures/player.png
-tree.tscn::PackedScene::6585969257218886758::1714683166::0::1::::<><>::uid://ba6q7yfmb1lbn::::res://Textures/tree.png
-world.tscn::PackedScene::3854071720089581814::1714684648::0::1::::<><>::uid://brl0hwvshprh0::::res://player.tscn<>uid://cg80g20c0dd86::::res://Tilemaps/punyworld-overworld-tileset.png<>uid://c03j7l4tgwjtm::::res://tree.tscn
-::res://Textures/::1714683905
-player.png::CompressedTexture2D::1905507058618812387::1714318855::1714318858::1::::<><>::
-tree.png::CompressedTexture2D::2451446280190195835::1714683166::1714683166::1::::<><>::
-::res://Textures/icons/::1714684722
-food_icon.png::CompressedTexture2D::4268182344676474587::1714683166::1714683903::1::::<><>::
-wood_icon.webp::CompressedTexture2D::4274157676114187623::1714683166::1714683905::1::::<><>::
-::res://Textures/icons/Pixel Art Icon Pack - RPG/::1714684719
-::res://Textures/icons/Pixel Art Icon Pack - RPG/Equipment/::1714684719
-Bag.png::CompressedTexture2D::8660669277961490817::1714684719::1714684723::1::::<><>::
-Belt.png::CompressedTexture2D::8930743387368795745::1714684719::1714684723::1::::<><>::
-Helm.png::CompressedTexture2D::4428371757638428429::1714684719::1714684723::1::::<><>::
-Iron Armor.png::CompressedTexture2D::519790667088508259::1714684719::1714684723::1::::<><>::
-Iron Boot.png::CompressedTexture2D::6195434288785702286::1714684719::1714684723::1::::<><>::
-Iron Helmet.png::CompressedTexture2D::8592814541084492849::1714684719::1714684723::1::::<><>::
-Leather Armor.png::CompressedTexture2D::4298542202122436512::1714684719::1714684723::1::::<><>::
-Leather Boot.png::CompressedTexture2D::7645690291157097693::1714684719::1714684723::1::::<><>::
-Leather Helmet.png::CompressedTexture2D::7583844247172255139::1714684719::1714684723::1::::<><>::
-Wizard Hat.png::CompressedTexture2D::7261681844154585529::1714684719::1714684723::1::::<><>::
-Wooden Armor.png::CompressedTexture2D::2851301045432393898::1714684719::1714684723::1::::<><>::
-::res://Textures/icons/Pixel Art Icon Pack - RPG/Food/::1714684719
-Apple.png::CompressedTexture2D::3450225186460012175::1714684719::1714684723::1::::<><>::
-Beer.png::CompressedTexture2D::4166405122205175807::1714684719::1714684723::1::::<><>::
-Bread.png::CompressedTexture2D::1684288311460695959::1714684719::1714684723::1::::<><>::
-Cheese.png::CompressedTexture2D::8128160963207511387::1714684719::1714684723::1::::<><>::
-Fish Steak.png::CompressedTexture2D::5602474994125261885::1714684719::1714684723::1::::<><>::
-Green Apple.png::CompressedTexture2D::4918441301766421445::1714684719::1714684723::1::::<><>::
-Ham.png::CompressedTexture2D::3514005245257646929::1714684719::1714684723::1::::<><>::
-Meat.png::CompressedTexture2D::1785968713772975947::1714684719::1714684723::1::::<><>::
-Mushroom.png::CompressedTexture2D::7846005262246697895::1714684719::1714684723::1::::<><>::
-Wine 2.png::CompressedTexture2D::7799847802738813149::1714684719::1714684723::1::::<><>::
-Wine.png::CompressedTexture2D::1969169972603634751::1714684719::1714684723::1::::<><>::
-::res://Textures/icons/Pixel Art Icon Pack - RPG/Material/::1714684719
-Fabric.png::CompressedTexture2D::7316719540159900059::1714684719::1714684723::1::::<><>::
-Leather.png::CompressedTexture2D::6613779009462438907::1714684719::1714684723::1::::<><>::
-Paper.png::CompressedTexture2D::8780456238814036780::1714684719::1714684723::1::::<><>::
-Rope.png::CompressedTexture2D::1992468093436912902::1714684719::1714684723::1::::<><>::
-String.png::CompressedTexture2D::7022351038887784221::1714684719::1714684723::1::::<><>::
-Wood Log.png::CompressedTexture2D::5011868169347052403::1714684719::1714684723::1::::<><>::
-Wooden Plank.png::CompressedTexture2D::6686442790022835629::1714684719::1714684723::1::::<><>::
-Wool.png::CompressedTexture2D::7014521331883576347::1714684719::1714684723::1::::<><>::
-::res://Textures/icons/Pixel Art Icon Pack - RPG/Misc/::1714684719
-Book 2.png::CompressedTexture2D::635253012398467999::1714684719::1714684723::1::::<><>::
-Book 3.png::CompressedTexture2D::3591165102061528727::1714684719::1714684723::1::::<><>::
-Book.png::CompressedTexture2D::4409328020860629181::1714684719::1714684723::1::::<><>::
-Candle.png::CompressedTexture2D::1703313579587226374::1714684719::1714684723::1::::<><>::
-Chest.png::CompressedTexture2D::6526374214049012277::1714684719::1714684723::1::::<><>::
-Copper Coin.png::CompressedTexture2D::2804932968205750456::1714684719::1714684723::1::::<><>::
-Crate.png::CompressedTexture2D::6215093604962390202::1714684719::1714684723::1::::<><>::
-Envolop.png::CompressedTexture2D::3953399841137652592::1714684719::1714684723::1::::<><>::
-Gear.png::CompressedTexture2D::8451741178030903730::1714684719::1714684723::1::::<><>::
-Golden Coin.png::CompressedTexture2D::5174529551143351144::1714684719::1714684723::1::::<><>::
-Golden Key.png::CompressedTexture2D::273965400019889099::1714684719::1714684723::1::::<><>::
-Heart.png::CompressedTexture2D::3712680138213071526::1714684719::1714684723::1::::<><>::
-Iron Key.png::CompressedTexture2D::4562498459624449286::1714684719::1714684723::1::::<><>::
-Lantern.png::CompressedTexture2D::645000623133950676::1714684719::1714684723::1::::<><>::
-Map.png::CompressedTexture2D::7924485208421707792::1714684719::1714684723::1::::<><>::
-Rune Stone.png::CompressedTexture2D::2082515971028202200::1714684719::1714684723::1::::<><>::
-Scroll.png::CompressedTexture2D::1359305148198957696::1714684719::1714684723::1::::<><>::
-Silver Coin.png::CompressedTexture2D::4594946708368957562::1714684719::1714684723::1::::<><>::
-Silver Key.png::CompressedTexture2D::5746981387886955087::1714684719::1714684723::1::::<><>::
-::res://Textures/icons/Pixel Art Icon Pack - RPG/Monster Part/::1714684719
-Bone.png::CompressedTexture2D::7561807789561619640::1714684719::1714684723::1::::<><>::
-Egg.png::CompressedTexture2D::1412735215762783016::1714684719::1714684723::1::::<><>::
-Feather.png::CompressedTexture2D::3065213028554270053::1714684719::1714684723::1::::<><>::
-Monster Egg.png::CompressedTexture2D::9081721358342341568::1714684719::1714684723::1::::<><>::
-Monster Eye.png::CompressedTexture2D::306010754605156685::1714684719::1714684723::1::::<><>::
-Monster Meat.png::CompressedTexture2D::1948600679835813654::1714684719::1714684723::1::::<><>::
-Skull.png::CompressedTexture2D::8865065829110777248::1714684719::1714684723::1::::<><>::
-Slime Gel.png::CompressedTexture2D::8376079032086047746::1714684719::1714684723::1::::<><>::
-::res://Textures/icons/Pixel Art Icon Pack - RPG/Ore & Gem/::1714684719
-Coal.png::CompressedTexture2D::5844088976072662197::1714684719::1714684723::1::::<><>::
-Copper Ingot.png::CompressedTexture2D::5504641751755267794::1714684719::1714684723::1::::<><>::
-Copper Nugget.png::CompressedTexture2D::2461106418927386972::1714684719::1714684723::1::::<><>::
-Crystal.png::CompressedTexture2D::4303301049229926196::1714684719::1714684723::1::::<><>::
-Cut Emerald.png::CompressedTexture2D::6249553000212804542::1714684719::1714684723::1::::<><>::
-Cut Ruby.png::CompressedTexture2D::6856238600870442380::1714684719::1714684723::1::::<><>::
-Cut Sapphire.png::CompressedTexture2D::992223430866657990::1714684719::1714684723::1::::<><>::
-Cut Topaz.png::CompressedTexture2D::615986047058929902::1714684719::1714684723::1::::<><>::
-Diamond.png::CompressedTexture2D::8945735516539654989::1714684719::1714684723::1::::<><>::
-Emerald.png::CompressedTexture2D::8474318359109310385::1714684719::1714684723::1::::<><>::
-Gold Nugget.png::CompressedTexture2D::7162936171821101224::1714684719::1714684723::1::::<><>::
-Golden Ingot.png::CompressedTexture2D::4448309142561140812::1714684719::1714684723::1::::<><>::
-Obsidian.png::CompressedTexture2D::4772345704943275167::1714684719::1714684723::1::::<><>::
-Pearl.png::CompressedTexture2D::1434038578007626690::1714684719::1714684723::1::::<><>::
-Ruby.png::CompressedTexture2D::2014424112742685775::1714684719::1714684723::1::::<><>::
-Sapphire.png::CompressedTexture2D::5237316976015335209::1714684719::1714684723::1::::<><>::
-Silver Ingot.png::CompressedTexture2D::6351706164539318573::1714684719::1714684723::1::::<><>::
-Silver Nugget.png::CompressedTexture2D::8221843597330814064::1714684719::1714684723::1::::<><>::
-Topaz.png::CompressedTexture2D::3621472670524863379::1714684719::1714684723::1::::<><>::
-::res://Textures/icons/Pixel Art Icon Pack - RPG/Potion/::1714684719
-Blue Potion 2.png::CompressedTexture2D::8215034515557242136::1714684719::1714684723::1::::<><>::
-Blue Potion 3.png::CompressedTexture2D::3690310802086123704::1714684719::1714684723::1::::<><>::
-Blue Potion.png::CompressedTexture2D::8434102018987989188::1714684719::1714684723::1::::<><>::
-Empty Bottle.png::CompressedTexture2D::4227331482517499961::1714684719::1714684723::1::::<><>::
-Green Potion 2.png::CompressedTexture2D::5790923354518336555::1714684719::1714684723::1::::<><>::
-Green Potion 3.png::CompressedTexture2D::8752059417255751934::1714684719::1714684723::1::::<><>::
-Green Potion.png::CompressedTexture2D::8995314121957211046::1714684719::1714684723::1::::<><>::
-Red Potion 2.png::CompressedTexture2D::5264900627632804019::1714684719::1714684723::1::::<><>::
-Red Potion 3.png::CompressedTexture2D::3581435120080365801::1714684719::1714684723::1::::<><>::
-Red Potion.png::CompressedTexture2D::1242843600825093864::1714684719::1714684723::1::::<><>::
-Water Bottle.png::CompressedTexture2D::4488734619250448741::1714684719::1714684723::1::::<><>::
-::res://Textures/icons/Pixel Art Icon Pack - RPG/Weapon & Tool/::1714684719
-Arrow.png::CompressedTexture2D::7070587505814216121::1714684719::1714684723::1::::<><>::
-Axe.png::CompressedTexture2D::4203404896880841966::1714684719::1714684723::1::::<><>::
-Bow.png::CompressedTexture2D::9141390595702914919::1714684719::1714684723::1::::<><>::
-Emerald Staff.png::CompressedTexture2D::7198410861181271546::1714684719::1714684723::1::::<><>::
-Golden Sword.png::CompressedTexture2D::8628933502926069137::1714684719::1714684723::1::::<><>::
-Hammer.png::CompressedTexture2D::4803433191105504180::1714684719::1714684723::1::::<><>::
-Iron Shield.png::CompressedTexture2D::986900513983531659::1714684719::1714684723::1::::<><>::
-Iron Sword.png::CompressedTexture2D::5516688271321851477::1714684719::1714684723::1::::<><>::
-Knife.png::CompressedTexture2D::1186016570759650123::1714684719::1714684723::1::::<><>::
-Magic Wand.png::CompressedTexture2D::3311467208781904754::1714684719::1714684723::1::::<><>::
-Pickaxe.png::CompressedTexture2D::6464750158728864897::1714684719::1714684723::1::::<><>::
-Ruby Staff.png::CompressedTexture2D::8565452432900374885::1714684719::1714684723::1::::<><>::
-Sapphire Staff.png::CompressedTexture2D::7146733663116663263::1714684719::1714684723::1::::<><>::
-Shovel.png::CompressedTexture2D::6554183129868884387::1714684719::1714684723::1::::<><>::
-Silver Sword.png::CompressedTexture2D::2434570948047641374::1714684719::1714684723::1::::<><>::
-Topaz Staff.png::CompressedTexture2D::6241250261049294589::1714684719::1714684723::1::::<><>::
-Torch.png::CompressedTexture2D::2470621258165636741::1714684719::1714684723::1::::<><>::
-Wooden Shield.png::CompressedTexture2D::646808244386602038::1714684719::1714684723::1::::<><>::
-Wooden Staff.png::CompressedTexture2D::1712522497710646667::1714684719::1714684723::1::::<><>::
-Wooden Sword.png::CompressedTexture2D::6253658357897196958::1714684719::1714684723::1::::<><>::
-::res://Tilemaps/::1714683166
-punyworld-overworld-tileset.png::CompressedTexture2D::5263628991555926069::1714683166::1714683166::1::::<><>::
+::res://::1714722484
+icon.svg::CompressedTexture2D::1175276720659491497::1714641425::1714721814::1::::<><>::
+InventoryNode.gd::GDScript::-1::1714722424::0::1::::<>Node2D<>::
+inventory_node.tscn::PackedScene::7377657298616857738::1714722456::0::1::::<><>::res://InventoryNode.gd<>uid://bl7jvk73j56vr::::res://item.tscn
+Item.gd::GDScript::-1::1714720641::0::1::::Item<>Node2D<>::
+item.tscn::PackedScene::3225142582400948439::1714722456::0::1::::<><>::res://Item.gd<>uid://cdn10bnvskxnn::::res://Textures/icons/Pixel Art Icon Pack - RPG/Material/Wood Log.png
+player.gd::GDScript::-1::1714644195::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::3603870794993202355::1714722456::0::1::::<><>::res://player.gd<>uid://2fbom28sv5b8::::res://Textures/player.png
+tree.tscn::PackedScene::6585969257218886758::1714722456::0::1::::<><>::uid://ba6q7yfmb1lbn::::res://Textures/tree.png
+world.gd::GDScript::-1::1714720641::0::1::::<>Node2D<>::
+world.tscn::PackedScene::3854071720089581814::1714722456::0::1::::<><>::uid://brl0hwvshprh0::::res://player.tscn<>res://world.gd<>uid://cg80g20c0dd86::::res://Tilemaps/punyworld-overworld-tileset.png<>uid://c03j7l4tgwjtm::::res://tree.tscn<>uid://ddd165ebj3lrm::::res://inventory_node.tscn
+::res://Textures/::1714720641
+player.png::CompressedTexture2D::1905507058618812387::1714641425::1714641425::1::::<><>::
+tree.png::CompressedTexture2D::2451446280190195835::1714654626::1714654642::1::::<><>::
+::res://Textures/icons/::1714720641
+::res://Textures/icons/Pixel Art Icon Pack - RPG/::1714720641
+::res://Textures/icons/Pixel Art Icon Pack - RPG/Equipment/::1714720641
+Bag.png::CompressedTexture2D::8660669277961490817::1714720641::1714720641::1::::<><>::
+Belt.png::CompressedTexture2D::8930743387368795745::1714720641::1714720641::1::::<><>::
+Helm.png::CompressedTexture2D::4428371757638428429::1714720641::1714720641::1::::<><>::
+Iron Armor.png::CompressedTexture2D::519790667088508259::1714720641::1714720641::1::::<><>::
+Iron Boot.png::CompressedTexture2D::6195434288785702286::1714720641::1714720641::1::::<><>::
+Iron Helmet.png::CompressedTexture2D::8592814541084492849::1714720641::1714720641::1::::<><>::
+Leather Armor.png::CompressedTexture2D::4298542202122436512::1714720641::1714720641::1::::<><>::
+Leather Boot.png::CompressedTexture2D::7645690291157097693::1714720641::1714720641::1::::<><>::
+Leather Helmet.png::CompressedTexture2D::7583844247172255139::1714720641::1714720641::1::::<><>::
+Wizard Hat.png::CompressedTexture2D::7261681844154585529::1714720641::1714720641::1::::<><>::
+Wooden Armor.png::CompressedTexture2D::2851301045432393898::1714720641::1714720641::1::::<><>::
+::res://Textures/icons/Pixel Art Icon Pack - RPG/Food/::1714720641
+Apple.png::CompressedTexture2D::3450225186460012175::1714720641::1714720641::1::::<><>::
+Beer.png::CompressedTexture2D::4166405122205175807::1714720641::1714720641::1::::<><>::
+Bread.png::CompressedTexture2D::1684288311460695959::1714720641::1714720641::1::::<><>::
+Cheese.png::CompressedTexture2D::8128160963207511387::1714720641::1714720641::1::::<><>::
+Fish Steak.png::CompressedTexture2D::5602474994125261885::1714720641::1714720641::1::::<><>::
+Green Apple.png::CompressedTexture2D::4918441301766421445::1714720641::1714720641::1::::<><>::
+Ham.png::CompressedTexture2D::3514005245257646929::1714720641::1714720641::1::::<><>::
+Meat.png::CompressedTexture2D::1785968713772975947::1714720641::1714720641::1::::<><>::
+Mushroom.png::CompressedTexture2D::7846005262246697895::1714720641::1714720641::1::::<><>::
+Wine 2.png::CompressedTexture2D::7799847802738813149::1714720641::1714720641::1::::<><>::
+Wine.png::CompressedTexture2D::1969169972603634751::1714720641::1714720641::1::::<><>::
+::res://Textures/icons/Pixel Art Icon Pack - RPG/Material/::1714720641
+Fabric.png::CompressedTexture2D::7316719540159900059::1714720641::1714720641::1::::<><>::
+Leather.png::CompressedTexture2D::6613779009462438907::1714720641::1714720641::1::::<><>::
+Paper.png::CompressedTexture2D::8780456238814036780::1714720641::1714720641::1::::<><>::
+Rope.png::CompressedTexture2D::1992468093436912902::1714720641::1714720641::1::::<><>::
+String.png::CompressedTexture2D::7022351038887784221::1714720641::1714720641::1::::<><>::
+Wood Log.png::CompressedTexture2D::5011868169347052403::1714720641::1714720641::1::::<><>::
+Wooden Plank.png::CompressedTexture2D::6686442790022835629::1714720641::1714720641::1::::<><>::
+Wool.png::CompressedTexture2D::7014521331883576347::1714720641::1714720641::1::::<><>::
+::res://Textures/icons/Pixel Art Icon Pack - RPG/Misc/::1714720641
+Book 2.png::CompressedTexture2D::635253012398467999::1714720641::1714720641::1::::<><>::
+Book 3.png::CompressedTexture2D::3591165102061528727::1714720641::1714720641::1::::<><>::
+Book.png::CompressedTexture2D::4409328020860629181::1714720641::1714720641::1::::<><>::
+Candle.png::CompressedTexture2D::1703313579587226374::1714720641::1714720641::1::::<><>::
+Chest.png::CompressedTexture2D::6526374214049012277::1714720641::1714720641::1::::<><>::
+Copper Coin.png::CompressedTexture2D::2804932968205750456::1714720641::1714720641::1::::<><>::
+Crate.png::CompressedTexture2D::6215093604962390202::1714720641::1714720641::1::::<><>::
+Envolop.png::CompressedTexture2D::3953399841137652592::1714720641::1714720641::1::::<><>::
+Gear.png::CompressedTexture2D::8451741178030903730::1714720641::1714720641::1::::<><>::
+Golden Coin.png::CompressedTexture2D::5174529551143351144::1714720641::1714720641::1::::<><>::
+Golden Key.png::CompressedTexture2D::273965400019889099::1714720641::1714720641::1::::<><>::
+Heart.png::CompressedTexture2D::3712680138213071526::1714720641::1714720641::1::::<><>::
+Iron Key.png::CompressedTexture2D::4562498459624449286::1714720641::1714720641::1::::<><>::
+Lantern.png::CompressedTexture2D::645000623133950676::1714720641::1714720641::1::::<><>::
+Map.png::CompressedTexture2D::7924485208421707792::1714720641::1714720641::1::::<><>::
+Rune Stone.png::CompressedTexture2D::2082515971028202200::1714720641::1714720641::1::::<><>::
+Scroll.png::CompressedTexture2D::1359305148198957696::1714720641::1714720641::1::::<><>::
+Silver Coin.png::CompressedTexture2D::4594946708368957562::1714720641::1714720641::1::::<><>::
+Silver Key.png::CompressedTexture2D::5746981387886955087::1714720641::1714720641::1::::<><>::
+::res://Textures/icons/Pixel Art Icon Pack - RPG/Monster Part/::1714720641
+Bone.png::CompressedTexture2D::7561807789561619640::1714720641::1714720641::1::::<><>::
+Egg.png::CompressedTexture2D::1412735215762783016::1714720641::1714720641::1::::<><>::
+Feather.png::CompressedTexture2D::3065213028554270053::1714720641::1714720641::1::::<><>::
+Monster Egg.png::CompressedTexture2D::9081721358342341568::1714720641::1714720641::1::::<><>::
+Monster Eye.png::CompressedTexture2D::306010754605156685::1714720641::1714720641::1::::<><>::
+Monster Meat.png::CompressedTexture2D::1948600679835813654::1714720641::1714720641::1::::<><>::
+Skull.png::CompressedTexture2D::8865065829110777248::1714720641::1714720641::1::::<><>::
+Slime Gel.png::CompressedTexture2D::8376079032086047746::1714720641::1714720641::1::::<><>::
+::res://Textures/icons/Pixel Art Icon Pack - RPG/Ore & Gem/::1714720641
+Coal.png::CompressedTexture2D::5844088976072662197::1714720641::1714720641::1::::<><>::
+Copper Ingot.png::CompressedTexture2D::5504641751755267794::1714720641::1714720641::1::::<><>::
+Copper Nugget.png::CompressedTexture2D::2461106418927386972::1714720641::1714720641::1::::<><>::
+Crystal.png::CompressedTexture2D::4303301049229926196::1714720641::1714720641::1::::<><>::
+Cut Emerald.png::CompressedTexture2D::6249553000212804542::1714720641::1714720641::1::::<><>::
+Cut Ruby.png::CompressedTexture2D::6856238600870442380::1714720641::1714720641::1::::<><>::
+Cut Sapphire.png::CompressedTexture2D::992223430866657990::1714720641::1714720641::1::::<><>::
+Cut Topaz.png::CompressedTexture2D::615986047058929902::1714720641::1714720641::1::::<><>::
+Diamond.png::CompressedTexture2D::8945735516539654989::1714720641::1714720641::1::::<><>::
+Emerald.png::CompressedTexture2D::8474318359109310385::1714720641::1714720641::1::::<><>::
+Gold Nugget.png::CompressedTexture2D::7162936171821101224::1714720641::1714720641::1::::<><>::
+Golden Ingot.png::CompressedTexture2D::4448309142561140812::1714720641::1714720641::1::::<><>::
+Obsidian.png::CompressedTexture2D::4772345704943275167::1714720641::1714720641::1::::<><>::
+Pearl.png::CompressedTexture2D::1434038578007626690::1714720641::1714720641::1::::<><>::
+Ruby.png::CompressedTexture2D::2014424112742685775::1714720641::1714720641::1::::<><>::
+Sapphire.png::CompressedTexture2D::5237316976015335209::1714720641::1714720641::1::::<><>::
+Silver Ingot.png::CompressedTexture2D::6351706164539318573::1714720641::1714720641::1::::<><>::
+Silver Nugget.png::CompressedTexture2D::8221843597330814064::1714720641::1714720641::1::::<><>::
+Topaz.png::CompressedTexture2D::3621472670524863379::1714720641::1714720641::1::::<><>::
+::res://Textures/icons/Pixel Art Icon Pack - RPG/Potion/::1714720641
+Blue Potion 2.png::CompressedTexture2D::8215034515557242136::1714720641::1714720641::1::::<><>::
+Blue Potion 3.png::CompressedTexture2D::3690310802086123704::1714720641::1714720641::1::::<><>::
+Blue Potion.png::CompressedTexture2D::8434102018987989188::1714720641::1714720641::1::::<><>::
+Empty Bottle.png::CompressedTexture2D::4227331482517499961::1714720641::1714720641::1::::<><>::
+Green Potion 2.png::CompressedTexture2D::5790923354518336555::1714720641::1714720641::1::::<><>::
+Green Potion 3.png::CompressedTexture2D::8752059417255751934::1714720641::1714720641::1::::<><>::
+Green Potion.png::CompressedTexture2D::8995314121957211046::1714720641::1714720641::1::::<><>::
+Red Potion 2.png::CompressedTexture2D::5264900627632804019::1714720641::1714720641::1::::<><>::
+Red Potion 3.png::CompressedTexture2D::3581435120080365801::1714720641::1714720641::1::::<><>::
+Red Potion.png::CompressedTexture2D::1242843600825093864::1714720641::1714720641::1::::<><>::
+Water Bottle.png::CompressedTexture2D::4488734619250448741::1714720641::1714720641::1::::<><>::
+::res://Textures/icons/Pixel Art Icon Pack - RPG/Weapon & Tool/::1714720641
+Arrow.png::CompressedTexture2D::7070587505814216121::1714720641::1714720641::1::::<><>::
+Axe.png::CompressedTexture2D::4203404896880841966::1714720641::1714720641::1::::<><>::
+Bow.png::CompressedTexture2D::9141390595702914919::1714720641::1714720641::1::::<><>::
+Emerald Staff.png::CompressedTexture2D::7198410861181271546::1714720641::1714720641::1::::<><>::
+Golden Sword.png::CompressedTexture2D::8628933502926069137::1714720641::1714720641::1::::<><>::
+Hammer.png::CompressedTexture2D::4803433191105504180::1714720641::1714720641::1::::<><>::
+Iron Shield.png::CompressedTexture2D::986900513983531659::1714720641::1714720641::1::::<><>::
+Iron Sword.png::CompressedTexture2D::5516688271321851477::1714720641::1714720641::1::::<><>::
+Knife.png::CompressedTexture2D::1186016570759650123::1714720641::1714720641::1::::<><>::
+Magic Wand.png::CompressedTexture2D::3311467208781904754::1714720641::1714720641::1::::<><>::
+Pickaxe.png::CompressedTexture2D::6464750158728864897::1714720641::1714720641::1::::<><>::
+Ruby Staff.png::CompressedTexture2D::8565452432900374885::1714720641::1714720641::1::::<><>::
+Sapphire Staff.png::CompressedTexture2D::7146733663116663263::1714720641::1714720641::1::::<><>::
+Shovel.png::CompressedTexture2D::6554183129868884387::1714720641::1714720641::1::::<><>::
+Silver Sword.png::CompressedTexture2D::2434570948047641374::1714720641::1714720641::1::::<><>::
+Topaz Staff.png::CompressedTexture2D::6241250261049294589::1714720641::1714720641::1::::<><>::
+Torch.png::CompressedTexture2D::2470621258165636741::1714720641::1714720641::1::::<><>::
+Wooden Shield.png::CompressedTexture2D::646808244386602038::1714720641::1714720641::1::::<><>::
+Wooden Staff.png::CompressedTexture2D::1712522497710646667::1714720641::1714720641::1::::<><>::
+Wooden Sword.png::CompressedTexture2D::6253658357897196958::1714720641::1714720641::1::::<><>::
+::res://Tilemaps/::1714642659
+punyworld-overworld-tileset.png::CompressedTexture2D::5263628991555926069::1714642655::1714642659::1::::<><>::
