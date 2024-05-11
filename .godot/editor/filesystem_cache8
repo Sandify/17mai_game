@@ -1,15 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715361563
+::res://::1715369913
 icon.svg::CompressedTexture2D::1175276720659491497::1714318080::1715361564::1::::<><>::
 InventoryNode.gd::GDScript::-1::1715361546::0::1::::<>Node2D<>::
-inventory_node.tscn::PackedScene::7377657298616857738::1715361546::0::1::::<><>::res://InventoryNode.gd<>uid://bl7jvk73j56vr::::res://item.tscn
+inventory_node.tscn::PackedScene::7377657298616857738::1715363146::0::1::::<><>::res://InventoryNode.gd<>uid://bl7jvk73j56vr::::res://item.tscn
 Item.gd::GDScript::-1::1714691066::0::1::::Item<>Node2D<>::
-item.tscn::PackedScene::3225142582400948439::1714691872::0::1::::<><>::res://Item.gd<>uid://cdn10bnvskxnn::::res://Textures/icons/Pixel Art Icon Pack - RPG/Material/Wood Log.png
+item.tscn::PackedScene::3225142582400948439::1715363146::0::1::::<><>::res://Item.gd<>uid://cdn10bnvskxnn::::res://Textures/icons/Pixel Art Icon Pack - RPG/Material/Wood Log.png
+main_menu.gd::GDScript::-1::1715362491::0::1::::<>Control<>::
+main_menu.tscn::PackedScene::3733042722934870315::1715363145::0::1::::<><>::res://main_menu.gd
 player.gd::GDScript::-1::1714683166::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::3603870794993202355::1714691872::0::1::::<><>::res://player.gd<>uid://2fbom28sv5b8::::res://Textures/player.png
+player.tscn::PackedScene::3603870794993202355::1715363146::0::1::::<><>::res://player.gd<>uid://2fbom28sv5b8::::res://Textures/player.png
 tree.tscn::PackedScene::6585969257218886758::1714683166::0::1::::<><>::uid://ba6q7yfmb1lbn::::res://Textures/tree.png
 world.gd::GDScript::-1::1715361546::0::1::::<>Node2D<>::
-world.tscn::PackedScene::3854071720089581814::1715361546::0::1::::<><>::uid://brl0hwvshprh0::::res://player.tscn<>res://world.gd<>uid://cg80g20c0dd86::::res://Tilemaps/punyworld-overworld-tileset.png<>uid://c03j7l4tgwjtm::::res://tree.tscn<>uid://ddd165ebj3lrm::::res://inventory_node.tscn
+world.tscn::PackedScene::3854071720089581814::1715363270::0::1::::<><>::uid://brl0hwvshprh0::::res://player.tscn<>res://world.gd<>uid://ddd165ebj3lrm::::res://inventory_node.tscn
+world_01.tscn::PackedScene::1845702215071306198::1715365497::0::1::::<><>::uid://cg80g20c0dd86::::res://Tilemaps/punyworld-overworld-tileset.png
 ::res://Textures/::1714683905
 player.png::CompressedTexture2D::1905507058618812387::1714318855::1714318858::1::::<><>::
 tree.png::CompressedTexture2D::2451446280190195835::1714683166::1714683166::1::::<><>::
