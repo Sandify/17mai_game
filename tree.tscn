@@ -1,20 +1,52 @@
-[gd_scene load_steps=4 format=3 uid="uid://c03j7l4tgwjtm"]
+[gd_scene load_steps=6 format=3 uid="uid://fqsfowt8e766"]
 
-[ext_resource type="Texture2D" uid="uid://ba6q7yfmb1lbn" path="res://Textures/tree.png" id="1_dm123"]
+[ext_resource type="Script" path="res://Tree_new.gd" id="1_tc11v"]
+[ext_resource type="Texture2D" uid="uid://ba6q7yfmb1lbn" path="res://Textures/tree.png" id="2_chhu8"]
+[ext_resource type="FontFile" uid="uid://dk0onbp80ncvq" path="res://Fonts/Caveat-VariableFont_wght.ttf" id="3_ra2ej"]
 
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_2us2m"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_ym1tn"]
+radius = 300.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ux4y6"]
-radius = 260.768
+[sub_resource type="CircleShape2D" id="CircleShape2D_kqrac"]
+radius = 950.0
 
-[node name="Tree" type="StaticBody2D"]
-scale = Vector2(0.05, 0.05)
-physics_material_override = SubResource("PhysicsMaterial_2us2m")
+[node name="Tree" type="Area2D"]
+script = ExtResource("1_tc11v")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(7.62939e-06, 3.8147e-06)
+scale = Vector2(0.04, 0.04)
+shape = SubResource("CircleShape2D_ym1tn")
 
 [node name="Tree" type="Sprite2D" parent="."]
 position = Vector2(7.62939e-06, 3.8147e-06)
-scale = Vector2(0.75, 0.75)
-texture = ExtResource("1_dm123")
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("2_chhu8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_ux4y6")
+scale = Vector2(0.04, 0.04)
+shape = SubResource("CircleShape2D_kqrac")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -32.5
+offset_right = 32.5
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_ra2ej")
+text = "[E] TO CUT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TreeGrow" type="Timer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="timeout" from="TreeGrow" to="." method="_on_treegrow_timeout"]
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]

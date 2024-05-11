@@ -1,3 +1,9 @@
+Label
+AudioStreamPlayer2D
+Timer
+StaticBody2D
+CollisionShape2D
+Area2D
 Node2D
 Button
 VBoxContainer
@@ -6,9 +12,3 @@ CanvasLayer
 Container
 Panel
 Window
-Sprite2D
-StaticBody2D
-RigidBody2D
-CollisionShape2D
-TileMap
-MeshInstance2D

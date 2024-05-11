@@ -1,1 +1,8 @@
-res://world_01.tscn
+res://Scenes/world.tscn
+res://Scripts/Wood_inv.gd
+res://Scenes/main_menu.tscn
+res://Scenes/player.tscn
+res://Old/tree_old.tscn
+res://Scenes/world_01.tscn
+res://tree.tscn
+res://Tree_new.gd

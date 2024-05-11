@@ -1,18 +1,36 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715369913
+::res://::1715467902
 icon.svg::CompressedTexture2D::1175276720659491497::1714318080::1715361564::1::::<><>::
+tree.tscn::PackedScene::385076867314605773::1715467840::0::1::::<><>::res://Tree_new.gd<>uid://ba6q7yfmb1lbn::::res://Textures/tree.png<>uid://dk0onbp80ncvq::::res://Fonts/Caveat-VariableFont_wght.ttf
+Tree_new.gd::GDScript::-1::1715465403::0::1::::<>Area2D<>::
+::res://Fonts/::1715458708
+Caveat-VariableFont_wght.ttf::FontFile::7913633261759323322::1715458699::1715458708::1::::<><>::
+::res://Interaction/::1715462312
+InteractionManager.gd::GDScript::-1::1715462312::0::1::::<>Node2D<>::
+InteractionManager.tscn::PackedScene::5072141700089079077::1715462312::0::1::::<><>::res://Interaction/InteractionManager.gd<>uid://dk0onbp80ncvq::::res://Fonts/Caveat-VariableFont_wght.ttf
+::res://Interaction/Interaction area/::1715462296
+Caveat-VariableFont_wght.ttf::FontFile::620209501308379972::1715458660::1715458660::1::::<><>::
+interaction_area.gd::GDScript::-1::1715461826::0::1::::InteractionArea<>Area2D<>::
+interaction_area.tscn::PackedScene::6205573683497878700::1715462296::0::1::::<><>::res://Interaction/Interaction area/interaction_area.gd
+::res://Old/::1715467839
+tree.gd::GDScript::-1::1715465133::0::1::::<>Area2D<>::
+tree_old.tscn::PackedScene::6585969257218886758::1715467839::0::1::::<><>::res://Old/tree.gd<>uid://ba6q7yfmb1lbn::::res://Textures/tree.png<>uid://dk0onbp80ncvq::::res://Fonts/Caveat-VariableFont_wght.ttf<>uid://cmicpvf4mrlwq::::res://Sounds/Axe chopping wood.mp3
+::res://Scenes/::1715467869
+inventory_node.tscn::PackedScene::7377657298616857738::1715458262::0::1::::<><>::res://Scripts/InventoryNode.gd<>uid://bl7jvk73j56vr::::res://Scenes/item.tscn
+item.tscn::PackedScene::3225142582400948439::1715458262::0::1::::<><>::res://Scripts/Item.gd<>uid://cdn10bnvskxnn::::res://Textures/icons/Pixel Art Icon Pack - RPG/Material/Wood Log.png
+main_menu.tscn::PackedScene::3733042722934870315::1715467839::0::1::::<><>::res://Scripts/main_menu.gd
+player.tscn::PackedScene::3603870794993202355::1715467839::0::1::::<><>::res://Scripts/player.gd<>uid://2fbom28sv5b8::::res://Textures/player.png
+world.tscn::PackedScene::3854071720089581814::1715467869::0::1::::<><>::uid://brl0hwvshprh0::::res://Scenes/player.tscn<>res://Scripts/world.gd<>uid://ddd165ebj3lrm::::res://Scenes/inventory_node.tscn<>uid://1kcpfmtwrnvq::::res://Scenes/world_01.tscn<>uid://dk0onbp80ncvq::::res://Fonts/Caveat-VariableFont_wght.ttf<>res://Scripts/Wood_inv.gd
+world_01.tscn::PackedScene::1845702215071306198::1715467840::0::1::::<><>::uid://cg80g20c0dd86::::res://Tilemaps/punyworld-overworld-tileset.png<>uid://fqsfowt8e766::::res://tree.tscn
+::res://Scripts/::1715467869
 InventoryNode.gd::GDScript::-1::1715361546::0::1::::<>Node2D<>::
-inventory_node.tscn::PackedScene::7377657298616857738::1715363146::0::1::::<><>::res://InventoryNode.gd<>uid://bl7jvk73j56vr::::res://item.tscn
 Item.gd::GDScript::-1::1714691066::0::1::::Item<>Node2D<>::
-item.tscn::PackedScene::3225142582400948439::1715363146::0::1::::<><>::res://Item.gd<>uid://cdn10bnvskxnn::::res://Textures/icons/Pixel Art Icon Pack - RPG/Material/Wood Log.png
 main_menu.gd::GDScript::-1::1715362491::0::1::::<>Control<>::
-main_menu.tscn::PackedScene::3733042722934870315::1715363145::0::1::::<><>::res://main_menu.gd
-player.gd::GDScript::-1::1714683166::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::3603870794993202355::1715363146::0::1::::<><>::res://player.gd<>uid://2fbom28sv5b8::::res://Textures/player.png
-tree.tscn::PackedScene::6585969257218886758::1714683166::0::1::::<><>::uid://ba6q7yfmb1lbn::::res://Textures/tree.png
+player.gd::GDScript::-1::1715462886::0::1::::Player<>CharacterBody2D<>::
+Wood_inv.gd::GDScript::-1::1715467869::0::1::::<>Label<>::
 world.gd::GDScript::-1::1715361546::0::1::::<>Node2D<>::
-world.tscn::PackedScene::3854071720089581814::1715363270::0::1::::<><>::uid://brl0hwvshprh0::::res://player.tscn<>res://world.gd<>uid://ddd165ebj3lrm::::res://inventory_node.tscn
-world_01.tscn::PackedScene::1845702215071306198::1715365497::0::1::::<><>::uid://cg80g20c0dd86::::res://Tilemaps/punyworld-overworld-tileset.png
+::res://Sounds/::1715460137
+Axe chopping wood.mp3::AudioStreamMP3::5631771846017895376::1715460137::1715460137::1::::<><>::
 ::res://Textures/::1714683905
 player.png::CompressedTexture2D::1905507058618812387::1714318855::1714318858::1::::<><>::
 tree.png::CompressedTexture2D::2451446280190195835::1714683166::1714683166::1::::<><>::

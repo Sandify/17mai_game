@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=3 uid="uid://c03j7l4tgwjtm"]
+
+[ext_resource type="Script" path="res://Old/tree.gd" id="1_4axqt"]
+[ext_resource type="Texture2D" uid="uid://ba6q7yfmb1lbn" path="res://Textures/tree.png" id="2_41hee"]
+[ext_resource type="FontFile" uid="uid://dk0onbp80ncvq" path="res://Fonts/Caveat-VariableFont_wght.ttf" id="3_l1twv"]
+[ext_resource type="AudioStream" uid="uid://cmicpvf4mrlwq" path="res://Sounds/Axe chopping wood.mp3" id="4_fi6eb"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_2us2m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ux4y6"]
+radius = 260.768
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_4axqt")
+
+[node name="Tree" type="StaticBody2D" parent="."]
+scale = Vector2(0.05, 0.05)
+physics_material_override = SubResource("PhysicsMaterial_2us2m")
+
+[node name="Tree" type="Sprite2D" parent="Tree"]
+position = Vector2(7.62939e-06, 3.8147e-06)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_41hee")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree"]
+shape = SubResource("CircleShape2D_ux4y6")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -32.5
+offset_right = 32.5
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_l1twv")
+text = "[E] TO CUT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_fi6eb")
+volume_db = 6.775
+
+[node name="TreeGrow" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
+[connection signal="timeout" from="TreeGrow" to="." method="_on_tree_grow_timeout"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bl7jvk73j56vr"]
 
-[ext_resource type="Script" path="res://Item.gd" id="1_un03a"]
+[ext_resource type="Script" path="res://Scripts/Item.gd" id="1_un03a"]
 [ext_resource type="Texture2D" uid="uid://cdn10bnvskxnn" path="res://Textures/icons/Pixel Art Icon Pack - RPG/Material/Wood Log.png" id="2_wlic1"]
 
 [node name="Item" type="Node2D"]
