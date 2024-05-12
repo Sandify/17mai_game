@@ -1,24 +1,28 @@
-[gd_scene load_steps=9 format=3 uid="uid://bu56864amfcnm"]
+[gd_scene load_steps=12 format=3 uid="uid://bu56864amfcnm"]
 
 [ext_resource type="PackedScene" uid="uid://brl0hwvshprh0" path="res://Scenes/player.tscn" id="1_hu0ow"]
-[ext_resource type="Script" path="res://Scripts/world.gd" id="1_ohhsu"]
-[ext_resource type="PackedScene" uid="uid://fqsfowt8e766" path="res://tree.tscn" id="3_vmf0w"]
+[ext_resource type="Script" path="res://Scripts/GameManager.gd" id="1_my2eq"]
+[ext_resource type="PackedScene" uid="uid://fqsfowt8e766" path="res://Scenes/tree.tscn" id="3_vmf0w"]
 [ext_resource type="PackedScene" uid="uid://ddd165ebj3lrm" path="res://Scenes/inventory_node.tscn" id="4_5ib4m"]
+[ext_resource type="PackedScene" uid="uid://3w2enumtoxqg" path="res://Scenes/cookies.tscn" id="4_5vchl"]
 [ext_resource type="PackedScene" uid="uid://1kcpfmtwrnvq" path="res://Scenes/world_01.tscn" id="4_b2esp"]
 [ext_resource type="FontFile" uid="uid://dk0onbp80ncvq" path="res://Fonts/Caveat-VariableFont_wght.ttf" id="5_vqxem"]
 [ext_resource type="Script" path="res://Scripts/Wood_inv.gd" id="6_yfnxx"]
-[ext_resource type="Script" path="res://Scenes/Food_inv.gd" id="8_1squ8"]
+[ext_resource type="Script" path="res://Scripts/Food_inv.gd" id="8_1squ8"]
+[ext_resource type="Script" path="res://Scripts/Health_inv.gd" id="9_krgnh"]
+[ext_resource type="PackedScene" uid="uid://cbfly4lkxrl2k" path="res://Scenes/control.tscn" id="11_vsji8"]
 
 [node name="World" type="Node2D"]
-script = ExtResource("1_ohhsu")
+script = ExtResource("1_my2eq")
 
 [node name="World01" parent="." instance=ExtResource("4_b2esp")]
 
+[node name="Cookie" parent="World01" instance=ExtResource("4_5vchl")]
+position = Vector2(-556, -515)
+scale = Vector2(0.1, 0.1)
+
 [node name="Tree" parent="World01" instance=ExtResource("3_vmf0w")]
 position = Vector2(-445, -84)
-
-[node name="Tree2" parent="World01" instance=ExtResource("3_vmf0w")]
-position = Vector2(-452, -174)
 
 [node name="Player" parent="." instance=ExtResource("1_hu0ow")]
 top_level = true
@@ -39,6 +43,7 @@ unfocusable = true
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Inventory" type="Panel" parent="CanvasLayer"]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -51,6 +56,7 @@ grow_vertical = 2
 scale = Vector2(5.51682, -0.167429)
 
 [node name="Wood" type="Label" parent="CanvasLayer" groups=["inventory"]]
+visible = false
 offset_left = 18.0
 offset_top = 905.0
 offset_right = 251.0
@@ -61,6 +67,7 @@ text = "Wood: "
 script = ExtResource("6_yfnxx")
 
 [node name="Food" type="Label" parent="CanvasLayer" groups=["inventory"]]
+visible = false
 offset_left = 19.0
 offset_top = 961.0
 offset_right = 252.0
@@ -71,11 +78,36 @@ text = "Food"
 script = ExtResource("8_1squ8")
 
 [node name="Food_timer" type="Timer" parent="CanvasLayer"]
-wait_time = 10.0
-autostart = true
 
+[node name="Health_timer" type="Timer" parent="CanvasLayer"]
+wait_time = 2.0
+
+[node name="Health" type="Label" parent="CanvasLayer"]
+visible = false
+offset_left = 12.0
+offset_top = 989.0
+offset_right = 280.0
+offset_bottom = 1115.0
+scale = Vector2(1.12345, 0.863407)
+theme_override_fonts/font = ExtResource("5_vqxem")
+theme_override_font_sizes/font_size = 50
+text = "Health: "
+vertical_alignment = 1
+script = ExtResource("9_krgnh")
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("11_vsji8")]
+offset_left = -198.0
+offset_top = -66.9999
+offset_right = -198.0
+offset_bottom = 30.0001
+scale = Vector2(1.24236, 1.61768)
+
+[connection signal="cookies_picked_up" from="World01/Cookie" to="CanvasLayer/Food" method="_on_cookie_cookies_picked_up"]
+[connection signal="tree_cut_down" from="World01/Tree" to="." method="_on_tree_tree_cut_down"]
 [connection signal="tree_cut_down" from="World01/Tree" to="CanvasLayer/Wood" method="_on_tree_tree_cut_down"]
 [connection signal="tree_cut_down" from="World01/Tree" to="CanvasLayer/Food" method="_on_tree_tree_cut_down"]
-[connection signal="tree_cut_down" from="World01/Tree2" to="CanvasLayer/Wood" method="_on_tree_tree_cut_down"]
-[connection signal="tree_cut_down" from="World01/Tree2" to="CanvasLayer/Food" method="_on_tree_tree_cut_down"]
+[connection signal="out_of_food" from="CanvasLayer/Food" to="CanvasLayer/Health" method="_on_food_out_of_food"]
+[connection signal="player_has_food" from="CanvasLayer/Food" to="CanvasLayer/Health" method="_on_food_player_has_food"]
+[connection signal="timeout" from="CanvasLayer/Food_timer" to="." method="_on_food_timer_timeout"]
 [connection signal="timeout" from="CanvasLayer/Food_timer" to="CanvasLayer/Food" method="_on_food_timer_timeout"]
+[connection signal="timeout" from="CanvasLayer/Health_timer" to="CanvasLayer/Health" method="_on_health_timer_timeout"]
