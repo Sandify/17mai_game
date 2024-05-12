@@ -1,6 +1,10 @@
-res://Scenes/Food_inv.gd
-res://Scenes/world.tscn
+res://Scenes/control.tscn
 res://Scenes/main_menu.tscn
+res://Scenes/world.tscn
 res://Scenes/player.tscn
 res://Scenes/world_01.tscn
-res://tree.tscn
+res://Scenes/tree.tscn
+res://Scenes/cookies.tscn
+res://Scripts/GameManager.gd
+res://Scripts/InterfaceManager.gd
+res://Scripts/Tree_new.gd
