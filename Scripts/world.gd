@@ -24,3 +24,7 @@ func _process(delta):
 				#inventory_popup.hide()
 				#popup_open = false
 	#return true
+
+
+func _on_food_timer_timeout():
+	pass # Replace with function body.
