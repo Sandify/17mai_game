@@ -9,3 +9,11 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func _on_start_button_pressed():
+	change_scene("res://Scenes/world.tscn")
+
+
+func change_scene(target: String) -> void:
+	get_tree().change_scene_to_file(target)

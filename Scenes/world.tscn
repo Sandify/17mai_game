@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bu56864amfcnm"]
+[gd_scene load_steps=9 format=3 uid="uid://bu56864amfcnm"]
 
 [ext_resource type="PackedScene" uid="uid://brl0hwvshprh0" path="res://Scenes/player.tscn" id="1_hu0ow"]
 [ext_resource type="Script" path="res://Scripts/world.gd" id="1_ohhsu"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://1kcpfmtwrnvq" path="res://Scenes/world_01.tscn" id="4_b2esp"]
 [ext_resource type="FontFile" uid="uid://dk0onbp80ncvq" path="res://Fonts/Caveat-VariableFont_wght.ttf" id="5_vqxem"]
 [ext_resource type="Script" path="res://Scripts/Wood_inv.gd" id="6_yfnxx"]
+[ext_resource type="Script" path="res://Scenes/Food_inv.gd" id="8_1squ8"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_ohhsu")
@@ -17,25 +18,7 @@ script = ExtResource("1_ohhsu")
 position = Vector2(-445, -84)
 
 [node name="Tree2" parent="World01" instance=ExtResource("3_vmf0w")]
-position = Vector2(-549, -360)
-
-[node name="Tree3" parent="World01" instance=ExtResource("3_vmf0w")]
-position = Vector2(-411, -186)
-
-[node name="Tree4" parent="World01" instance=ExtResource("3_vmf0w")]
-position = Vector2(-359, -366)
-
-[node name="Tree5" parent="World01" instance=ExtResource("3_vmf0w")]
-position = Vector2(-443, -322)
-
-[node name="Tree6" parent="World01" instance=ExtResource("3_vmf0w")]
-position = Vector2(-340, -281)
-
-[node name="Tree7" parent="World01" instance=ExtResource("3_vmf0w")]
-position = Vector2(-546, -135)
-
-[node name="Tree8" parent="World01" instance=ExtResource("3_vmf0w")]
-position = Vector2(-532, -244)
+position = Vector2(-452, -174)
 
 [node name="Player" parent="." instance=ExtResource("1_hu0ow")]
 top_level = true
@@ -68,20 +51,26 @@ grow_vertical = 2
 scale = Vector2(5.51682, -0.167429)
 
 [node name="Wood" type="Label" parent="CanvasLayer" groups=["inventory"]]
-offset_left = 21.0
-offset_top = 912.0
-offset_right = 254.0
-offset_bottom = 975.0
+offset_left = 18.0
+offset_top = 905.0
+offset_right = 251.0
+offset_bottom = 968.0
 theme_override_fonts/font = ExtResource("5_vqxem")
 theme_override_font_sizes/font_size = 50
 text = "Wood: "
 script = ExtResource("6_yfnxx")
 
+[node name="Food" type="Label" parent="CanvasLayer" groups=["inventory"]]
+offset_left = 19.0
+offset_top = 961.0
+offset_right = 252.0
+offset_bottom = 1024.0
+theme_override_fonts/font = ExtResource("5_vqxem")
+theme_override_font_sizes/font_size = 50
+text = "Food"
+script = ExtResource("8_1squ8")
+
 [connection signal="tree_cut_down" from="World01/Tree" to="CanvasLayer/Wood" method="_on_tree_tree_cut_down"]
+[connection signal="tree_cut_down" from="World01/Tree" to="CanvasLayer/Food" method="_on_tree_tree_cut_down"]
 [connection signal="tree_cut_down" from="World01/Tree2" to="CanvasLayer/Wood" method="_on_tree_tree_cut_down"]
-[connection signal="tree_cut_down" from="World01/Tree3" to="CanvasLayer/Wood" method="_on_tree_tree_cut_down"]
-[connection signal="tree_cut_down" from="World01/Tree4" to="CanvasLayer/Wood" method="_on_tree_tree_cut_down"]
-[connection signal="tree_cut_down" from="World01/Tree5" to="CanvasLayer/Wood" method="_on_tree_tree_cut_down"]
-[connection signal="tree_cut_down" from="World01/Tree6" to="CanvasLayer/Wood" method="_on_tree_tree_cut_down"]
-[connection signal="tree_cut_down" from="World01/Tree7" to="CanvasLayer/Wood" method="_on_tree_tree_cut_down"]
-[connection signal="tree_cut_down" from="World01/Tree8" to="CanvasLayer/Wood" method="_on_tree_tree_cut_down"]
+[connection signal="tree_cut_down" from="World01/Tree2" to="CanvasLayer/Food" method="_on_tree_tree_cut_down"]

@@ -18,6 +18,7 @@ func _process(delta):
 		queue_free()
 		timer.start()
 		emit_signal("tree_cut_down")
+		
 
 func _on_body_entered(body):
 	if body is Player: showInteractionLabel = true
