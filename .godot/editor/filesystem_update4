@@ -1,7 +1,6 @@
-res://Scenes/world.tscn
 res://Scenes/Food_inv.gd
+res://Scenes/world.tscn
 res://Scenes/main_menu.tscn
 res://Scenes/player.tscn
 res://Scenes/world_01.tscn
 res://tree.tscn
-res://Scripts/main_menu.gd
