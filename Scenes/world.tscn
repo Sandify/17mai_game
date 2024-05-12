@@ -70,7 +70,12 @@ theme_override_font_sizes/font_size = 50
 text = "Food"
 script = ExtResource("8_1squ8")
 
+[node name="Food_timer" type="Timer" parent="CanvasLayer"]
+wait_time = 10.0
+autostart = true
+
 [connection signal="tree_cut_down" from="World01/Tree" to="CanvasLayer/Wood" method="_on_tree_tree_cut_down"]
 [connection signal="tree_cut_down" from="World01/Tree" to="CanvasLayer/Food" method="_on_tree_tree_cut_down"]
 [connection signal="tree_cut_down" from="World01/Tree2" to="CanvasLayer/Wood" method="_on_tree_tree_cut_down"]
 [connection signal="tree_cut_down" from="World01/Tree2" to="CanvasLayer/Food" method="_on_tree_tree_cut_down"]
+[connection signal="timeout" from="CanvasLayer/Food_timer" to="CanvasLayer/Food" method="_on_food_timer_timeout"]
