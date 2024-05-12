@@ -1,0 +1,350 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbfly4lkxrl2k"]
+
+[ext_resource type="Script" path="res://Scenes/InterfaceManager.gd" id="1_06pnr"]
+[ext_resource type="Script" path="res://Scenes/Market.gd" id="2_2lwpc"]
+
+[sub_resource type="RectangleShape2D" id="4"]
+size = Vector2(1160.5, 179)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -97.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_06pnr")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -70.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 0
+offset_left = 195.0
+offset_top = -67.0
+offset_right = 988.0
+offset_bottom = 94.0
+
+[node name="Industy" type="HBoxContainer" parent="TabContainer"]
+layout_mode = 2
+
+[node name="BuildStockpile" type="Button" parent="TabContainer/Industy"]
+layout_mode = 2
+text = "StockPile"
+
+[node name="BuildWoodCutterButton" type="Button" parent="TabContainer/Industy"]
+layout_mode = 2
+text = "WoodCutters"
+
+[node name="BuildStoneCutterButton2" type="Button" parent="TabContainer/Industy"]
+layout_mode = 2
+text = "StoneCutter"
+
+[node name="BuildIronWorker" type="Button" parent="TabContainer/Industy"]
+layout_mode = 2
+text = "Iron Forage"
+
+[node name="Food" type="HBoxContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Granery" type="Button" parent="TabContainer/Food"]
+layout_mode = 2
+text = "Granery"
+
+[node name="Orchard" type="Button" parent="TabContainer/Food"]
+layout_mode = 2
+text = "Orchard"
+
+[node name="Living" type="HBoxContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="BuildHouse" type="Button" parent="TabContainer/Living"]
+layout_mode = 2
+text = "House"
+
+[node name="Walls" type="HBoxContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="BuildWallNarrow" type="Button" parent="TabContainer/Walls"]
+layout_mode = 2
+text = "Wall Narrow"
+
+[node name="Economy" type="HBoxContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Control" type="Control" parent="TabContainer/Economy"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TabContainer/Economy/Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 14.0
+text = "Taxes"
+
+[node name="IncreaseTaxes" type="Button" parent="TabContainer/Economy/Control/Label"]
+layout_mode = 0
+offset_left = 74.0
+offset_top = -3.0
+offset_right = 94.0
+offset_bottom = 17.0
+text = "+"
+
+[node name="DecreaseTaxes" type="Button" parent="TabContainer/Economy/Control/Label"]
+layout_mode = 0
+offset_left = 99.0
+offset_top = -3.0
+offset_right = 116.0
+offset_bottom = 17.0
+text = "-"
+
+[node name="TaxRate" type="Label" parent="TabContainer/Economy/Control"]
+layout_mode = 0
+offset_left = 47.0
+offset_right = 87.0
+offset_bottom = 14.0
+text = "2%"
+
+[node name="Market" type="HBoxContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+script = ExtResource("2_2lwpc")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Market"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Market/VBoxContainer"]
+layout_mode = 2
+
+[node name="Food Label" type="Label" parent="TabContainer/Market/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Food: "
+
+[node name="FoodValue" type="Label" parent="TabContainer/Market/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "100"
+
+[node name="SellFood" type="Button" parent="TabContainer/Market/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Sell"
+
+[node name="BuyFood" type="Button" parent="TabContainer/Market/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Buy"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/Market/VBoxContainer"]
+layout_mode = 2
+
+[node name="Iron Label" type="Label" parent="TabContainer/Market/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "Iron: "
+
+[node name="IronValue" type="Label" parent="TabContainer/Market/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "100"
+
+[node name="SellIron" type="Button" parent="TabContainer/Market/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "Sell"
+
+[node name="BuyIron" type="Button" parent="TabContainer/Market/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "Buy"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="TabContainer/Market"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Market/VBoxContainer2"]
+layout_mode = 2
+
+[node name="Stone Label" type="Label" parent="TabContainer/Market/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+text = "Stone: "
+
+[node name="StoneValue" type="Label" parent="TabContainer/Market/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+text = "100"
+
+[node name="SellStone" type="Button" parent="TabContainer/Market/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+text = "Sell"
+
+[node name="BuyStone" type="Button" parent="TabContainer/Market/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+text = "Buy"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/Market/VBoxContainer2"]
+layout_mode = 2
+
+[node name="Wood Label" type="Label" parent="TabContainer/Market/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+text = "Wood: "
+
+[node name="WoodValue" type="Label" parent="TabContainer/Market/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+text = "100"
+
+[node name="SellWood" type="Button" parent="TabContainer/Market/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+text = "Sell"
+
+[node name="BuyWood" type="Button" parent="TabContainer/Market/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+text = "Buy"
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-44, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(618.75, 12.5)
+shape = SubResource("4")
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 5.0
+offset_top = 4.0
+offset_right = 185.0
+offset_bottom = 92.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -55.0
+offset_right = -58.0
+offset_bottom = 43.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Wood" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Wood:"
+
+[node name="WoodValue" type="Label" parent="Control/VBoxContainer/Wood"]
+layout_mode = 0
+offset_left = 46.0
+offset_right = 124.0
+offset_bottom = 14.0
+text = "100"
+
+[node name="Stone" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Stone:"
+
+[node name="StoneValue" type="Label" parent="Control/VBoxContainer/Stone"]
+layout_mode = 0
+offset_left = 46.0
+offset_right = 124.0
+offset_bottom = 14.0
+text = "100"
+
+[node name="Iron" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Iron:"
+
+[node name="IronValue" type="Label" parent="Control/VBoxContainer/Iron"]
+layout_mode = 0
+offset_left = 46.0
+offset_right = 124.0
+offset_bottom = 14.0
+text = "100"
+
+[node name="Food" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Food:"
+
+[node name="FoodValue" type="Label" parent="Control/VBoxContainer/Food"]
+layout_mode = 0
+offset_left = 46.0
+offset_right = 124.0
+offset_bottom = 14.0
+text = "100"
+
+[node name="Gold" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Gold:"
+
+[node name="GoldValue" type="Label" parent="Control/VBoxContainer/Gold"]
+layout_mode = 0
+offset_left = 46.0
+offset_right = 124.0
+offset_bottom = 14.0
+text = "100"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 96.0
+offset_top = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Pop" type="Label" parent="Control/VBoxContainer2"]
+layout_mode = 2
+text = "Pop:"
+
+[node name="PopValue" type="Label" parent="Control/VBoxContainer2/Pop"]
+layout_mode = 0
+offset_left = 33.0
+offset_right = 87.0
+offset_bottom = 14.0
+text = "1/20"
+
+[node name="Hap" type="Label" parent="Control/VBoxContainer2"]
+layout_mode = 2
+text = "Hap:"
+
+[node name="HapValue" type="Label" parent="Control/VBoxContainer2/Hap"]
+layout_mode = 0
+offset_left = 33.0
+offset_right = 87.0
+offset_bottom = 14.0
+text = "1/20"
+
+[node name="DestroyMode" type="Button" parent="."]
+layout_mode = 0
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -32.0
+offset_top = -29.0
+offset_right = -2.0
+offset_bottom = -4.0
+text = "D"
+
+[connection signal="button_down" from="TabContainer/Industy/BuildStockpile" to="." method="_on_BuildStockpile_button_down"]
+[connection signal="button_down" from="TabContainer/Industy/BuildWoodCutterButton" to="." method="_on_BuildWoodCutterButton_button_down"]
+[connection signal="button_down" from="TabContainer/Industy/BuildStoneCutterButton2" to="." method="_on_BuildStoneCutterButton2_button_down"]
+[connection signal="button_down" from="TabContainer/Industy/BuildIronWorker" to="." method="_on_BuildIronWorker_button_down"]
+[connection signal="button_down" from="TabContainer/Food/Granery" to="." method="_on_Granery_button_down"]
+[connection signal="button_down" from="TabContainer/Food/Orchard" to="." method="_on_Orchard_button_down"]
+[connection signal="button_down" from="TabContainer/Living/BuildHouse" to="." method="_on_BuildHouse_button_down"]
+[connection signal="button_down" from="TabContainer/Walls/BuildWallNarrow" to="." method="_on_BuildWallNarrow_button_down"]
+[connection signal="button_down" from="TabContainer/Economy/Control/Label/IncreaseTaxes" to="." method="_on_IncreaseTaxes_button_down"]
+[connection signal="button_down" from="TabContainer/Economy/Control/Label/DecreaseTaxes" to="." method="_on_DecreaseTaxes_button_down"]
+[connection signal="button_down" from="TabContainer/Market/VBoxContainer/HBoxContainer/SellFood" to="TabContainer/Market" method="_on_SellFood_button_down"]
+[connection signal="button_down" from="TabContainer/Market/VBoxContainer/HBoxContainer/BuyFood" to="TabContainer/Market" method="_on_BuyFood_button_down"]
+[connection signal="button_down" from="TabContainer/Market/VBoxContainer/HBoxContainer2/SellIron" to="TabContainer/Market" method="_on_SellIron_button_down"]
+[connection signal="button_down" from="TabContainer/Market/VBoxContainer/HBoxContainer2/BuyIron" to="TabContainer/Market" method="_on_BuyIron_button_down"]
+[connection signal="button_down" from="TabContainer/Market/VBoxContainer2/HBoxContainer/SellStone" to="TabContainer/Market" method="_on_SellStone_button_down"]
+[connection signal="button_down" from="TabContainer/Market/VBoxContainer2/HBoxContainer/BuyStone" to="TabContainer/Market" method="_on_BuyStone_button_down"]
+[connection signal="button_down" from="TabContainer/Market/VBoxContainer2/HBoxContainer2/SellWood" to="TabContainer/Market" method="_on_SellWood_button_down"]
+[connection signal="button_down" from="TabContainer/Market/VBoxContainer2/HBoxContainer2/BuyWood" to="TabContainer/Market" method="_on_BuyWood_button_down"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_Area2D_area_exited"]
+[connection signal="button_down" from="DestroyMode" to="." method="_on_DestroyMode_button_down"]
