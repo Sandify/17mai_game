@@ -1,10 +1,9 @@
-res://Scenes/control.tscn
 res://Scenes/main_menu.tscn
 res://Scenes/world.tscn
 res://Scenes/player.tscn
 res://Scenes/world_01.tscn
 res://Scenes/tree.tscn
 res://Scenes/cookies.tscn
-res://Scripts/GameManager.gd
+res://Scenes/control.tscn
 res://Scripts/InterfaceManager.gd
-res://Scripts/Tree_new.gd
+res://Scripts/GameManager.gd

@@ -30,6 +30,7 @@ var foodBool = true
 	#firePitSpaces = get_tree().get_nodes_in_group("CitizenSpawnPoint")
 #
 func _process(delta):
+	pass
 	#if Population < MaxPopulation and spawnReady and Happiness > 0 and firePitSpaces.size() > 0:
 		#spawnReady = false
 		#await get_tree().create_timer(3.0).timeout
@@ -47,20 +48,20 @@ func _process(delta):
 		#spawnReady = true
 		#if AlvPopulation > 0:
 			#RemoveCitizen(1)
-	if foodBool:
-		foodBool = false
-		await get_tree().create_timer(10.0).timeout
-		Food -= 1
-		if Food < 0:
-			Food = 0
-		foodBool = true
-		#Gold += round(Population * TaxRate)
-		#var happinessValue = 1
-		if Food > 0:
-			if Health < 100:
-				Health += 1
-		else:
-			Health -= 5
+	#if foodBool:
+		#foodBool = false
+		#await get_tree().create_timer(10.0).timeout
+		#Food -= 1
+		#if Food < 0:
+			#Food = 0
+		#foodBool = true
+		##Gold += round(Population * TaxRate)
+		##var happinessValue = 1
+		#if Food > 0:
+			#if Health < 100:
+				#Health += 1
+		#else:
+			#Health -= 5
 #
 		#if TaxRate > 0:
 			#happinessValue -= round(TaxRate / 2)

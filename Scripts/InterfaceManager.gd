@@ -1,5 +1,6 @@
 extends Control
 
+var foodBool = true
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -17,7 +18,21 @@ func _process(delta):
 	$Control/VBoxContainer/Stone/StoneValue.text = str(GameManager.Stone)
 	$Control/Health/HealthValue.text = str(GameManager.Health)
 	$Control/VBoxContainer/Food/FoodValue.text = str(GameManager.Food)
-	pass
+	
+	if foodBool:
+		foodBool = false
+		await get_tree().create_timer(10.0).timeout
+		GameManager.Food -= 1
+		if GameManager.Food < 0:
+			GameManager.Food = 0
+		foodBool = true
+		#Gold += round(Population * TaxRate)
+		#var happinessValue = 1
+		if GameManager.Food > 0:
+			if GameManager.Health < 100:
+				GameManager.Health += 5
+		else:
+			GameManager.Health -= 5
 
 
 func _on_IncreaseTaxes_button_down():
@@ -28,3 +43,13 @@ func _on_IncreaseTaxes_button_down():
 func _on_DecreaseTaxes_button_down():
 	GameManager.TaxRate -= 2 
 	pass # Replace with function body.
+
+
+func _on_tree_tree_cut_down():
+	var random_generator = RandomNumberGenerator.new()
+	var random_number = random_generator.randi_range(3, 12)
+	GameManager.Wood += random_number
+
+
+func _on_cookie_cookies_picked_up():
+	GameManager.Food += 250
