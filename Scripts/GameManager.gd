@@ -1,5 +1,8 @@
 extends Node2D
 
+signal test
+signal tree_cut_down
+
 #enum State{
 	#Play,
 	#Building,
@@ -91,6 +94,13 @@ func _process(delta):
 
 
 func _on_tree_tree_cut_down():
-	var random_generator = RandomNumberGenerator.new()
-	var random_number = random_generator.randi_range(3, 12)
-	Wood += 5
+	emit_signal("tree_cut_down")
+
+func _input(event):
+	# This function is called every frame with the user input event
+	if Input.is_action_just_pressed("space"):
+		# Check if the pressed key is the space key
+		testing()
+
+func testing():
+	emit_signal("test")
