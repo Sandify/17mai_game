@@ -9,7 +9,9 @@ var foodBool = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	# Connect the "test" signal to the "_on_test_signal" function
+	GameManager.connect("test", _on_test_signal)
+	#GameManager.connect("tree_cut_down", _tree_cut_down)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -34,6 +36,8 @@ func _process(delta):
 		else:
 			GameManager.Health -= 5
 
+func _on_test_signal():
+	print("test signal works")
 
 func _on_IncreaseTaxes_button_down():
 	GameManager.TaxRate += 2
@@ -45,11 +49,11 @@ func _on_DecreaseTaxes_button_down():
 	pass # Replace with function body.
 
 
+func _on_cookie_cookies_picked_up():
+	GameManager.Food += 250
+
+
 func _on_tree_tree_cut_down():
 	var random_generator = RandomNumberGenerator.new()
 	var random_number = random_generator.randi_range(3, 12)
 	GameManager.Wood += random_number
-
-
-func _on_cookie_cookies_picked_up():
-	GameManager.Food += 250
