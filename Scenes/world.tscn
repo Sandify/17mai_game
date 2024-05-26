@@ -224,7 +224,6 @@ text = "100"
 
 [connection signal="cookies_picked_up" from="World01/Cookie" to="CanvasLayer/Food" method="_on_cookie_cookies_picked_up"]
 [connection signal="cookies_picked_up" from="World01/Cookie" to="CanvasLayer/Control" method="_on_cookie_cookies_picked_up"]
-[connection signal="tree_cut_down" from="World01/Tree" to="." method="_on_tree_tree_cut_down"]
 [connection signal="tree_cut_down" from="World01/Tree" to="CanvasLayer/Wood" method="_on_tree_tree_cut_down"]
 [connection signal="tree_cut_down" from="World01/Tree" to="CanvasLayer/Food" method="_on_tree_tree_cut_down"]
 [connection signal="tree_cut_down" from="World01/Tree" to="CanvasLayer/Control" method="_on_tree_tree_cut_down"]
